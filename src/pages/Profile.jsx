@@ -34,7 +34,7 @@ const Profile = () => {
         password: data.password,
       });
     } catch (error) {
-      toast.error("Error: ", error.response);
+      toast.error("خطا: ", error.response);
     }
   };
 
@@ -42,7 +42,7 @@ const Profile = () => {
     if (loginState) {
       getUserData();
     } else {
-      toast.error("You must be logged in to access this page");
+      toast.error("ابتدا باید به حساب خود وارد شوید");
       navigate("/");
     }
   }, []);

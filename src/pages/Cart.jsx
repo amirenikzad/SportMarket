@@ -12,7 +12,7 @@ const Cart = () => {
 
   const isCartEmpty = () => {
     if(cartItems.length === 0){
-      toast.error("Your cart is empty");
+      toast.error("سبد شما خالی است");
     }else{
       navigate("/thank-you");
     }
@@ -20,7 +20,7 @@ const Cart = () => {
 
   return (
     <>
-    <SectionTitle title="کارت" path="" />
+    <SectionTitle title="سبدخرید" path="" />
     <div className='mt-8 grid gap-8 lg:grid-cols-12 max-w-7xl mx-auto px-10'>
         
         <div className='lg:col-span-4 lg:pl-4'>

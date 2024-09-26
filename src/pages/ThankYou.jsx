@@ -18,7 +18,7 @@ const ThankYou = () => {
     try {
       const response = await axios.post("http://localhost:8080/orders", {
         userId: localStorage.getItem("id"),
-        orderStatus: "in progress",
+        orderStatus: "در حال پردازش",
         subtotal: total,
         cartItems: cartItems,
       });
@@ -31,12 +31,12 @@ const ThankYou = () => {
     saveToOrderHistory();
     store.dispatch(clearCart());
     store.dispatch(calculateTotals());
-    toast.success("Order completed");
+    toast.success("سفارش با موفقیت انجام شد");
   }
 
   useEffect(() => {
     if (!loginState) {
-      toast.error("You must be logged in to access this page");
+      toast.error("ابتدا باید به حساب خود وارد شوید");
       navigate("/");
     }
   }, []);
@@ -44,36 +44,35 @@ const ThankYou = () => {
 
   return (
     <>
-      <SectionTitle title="با‌تشکر از‌شما" path="" />
+      {/* <SectionTitle title="با‌تشکر از‌شما" path="" /> */}
       <div className="thankyou-content text-center text-stone-950 px-10 max-w-7xl mx-auto">
         <h2 className="text-6xl max-sm:text-4xl">
-          Thank you for your purchase!
+        از خرید شما متشکریم
         </h2>
 
         <h3 className="text-2xl mt-10 max-sm:text-xl">
-          We hope you love your new clothes and shoes! We appreciate your
-          business and look forward to seeing you again soon.
+        امیدواریم محصول جدید خود را دوست داشته باشی
         </h3>
         <h3 className="text-2xl mt-5 max-sm:text-xl">
-          Here are some things you can do next:
+          برای پیگیری خرید و خدمات پس از فروش می توانید از لینک های زیر استفاده کنید
         </h3>
         <ul className="text-xl mt-5 text-blue-500 max-sm:text-lg">
           <li className="hover:text-blue-600 cursor-pointer">
-            <Link to="/order-history">&rarr; See order history &larr;</Link>
+            <Link to="/order-history">&rarr; دیدن تارخچه خرید &larr;</Link>
           </li>
           <li className="hover:text-blue-600 cursor-pointer">
-            <Link to="/">&rarr; Browse more product and buy more &larr;</Link>
+            <Link to="/">&rarr; مشاهده محصولات بیشتر  &larr;</Link>
           </li>
           <li className="hover:text-blue-600 cursor-pointer">
-            &rarr; Follow us on social media &larr;
+            &rarr; ما را در  فضای مجازی دنبال کنید &larr;
           </li>
         </ul>
 
         <h4 className="text-xl mt-5 max-sm:text-lg">
-          Thank you again for your purchase!
+        از خرید شما سپاسگزاریم
         </h4>
         <h4 className="text-xl max-sm:text-lg">
-          Sincerely, The Kuzma Clothing & Shoes team
+          با تشکر از شما، امیر نیکزاد
         </h4>
       </div>
     </>

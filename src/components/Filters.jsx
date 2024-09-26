@@ -9,7 +9,7 @@ import FormCheckbox from "./FormCheckbox";
 const Filters = () => {
   const [selectCategoryList, setSelectCategoryList] = useState([
     "all",
-    "shoes",
+    "کفش",
     "slippers",
     "heels",
     "t-shirts",
@@ -118,7 +118,7 @@ const Filters = () => {
 
       {/* In stock */}
       <FormCheckbox
-        label="Only products in stock"
+        label="فقط محصولات موجود در انبار"
         name="stock"
         defaultValue="false"
       />

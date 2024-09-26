@@ -25,10 +25,10 @@ const Login = () => {
 
     if (email.length === 0) {
       isProceed = false;
-      toast.warn("Please enter a email");
+      toast.warn("لطفا ایمیل خود را وارد کنید");
     } else if (password.length < 6) {
       isProceed = false;
-      toast.warn("Password must be minimum 6 characters");
+      toast.warn("رمز عبور باید حداقل ۶ کاراکتر باشد");
     }
     return isProceed;
   };
@@ -44,16 +44,16 @@ const Login = () => {
             (item) => item.email === email && item.password === password
           );
           if (foundUser[0]) {
-            toast.success("Login successful");
+            toast.success("ورود با موفقیت‌ انجام شد");
             localStorage.setItem("id", foundUser[0].id);
             store.dispatch(loginUser());
             navigate("/");
           } else {
-            toast.warn("Email or password is incorrect");
+            toast.warn("ایمیل یا رمزعبور اشتباه است");
           }
         })
         .catch((err) => {
-          toast.error("Login failed due to: " + err.message);
+          toast.error("ورود موفقیت‌آمیز نبود: " + err.message);
         });
     }
   };

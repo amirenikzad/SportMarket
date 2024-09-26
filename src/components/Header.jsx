@@ -156,17 +156,17 @@ const Header = () => {
                     to="/user-profile"
                     className="justify-between font-bold text-blue-600"
                   >
-                    Profile
+                    پروفایل
                   </Link>
                 </li>
                 <li>
                   <Link to="/order-history" className="font-bold text-blue-600">
-                    Order history
+                    تارخچه خرید
                   </Link>
                 </li>
                 <li>
                   <Link to="/login" className="font-bold text-blue-600">
-                    Logout
+                    خروج از حساب
                   </Link>
                 </li>
               </ul>
@@ -230,12 +230,12 @@ const Header = () => {
                 <>
                   <li className="text-xl">
                     <NavLink className="font-bold text-blue-600" to="/login">
-                      Login
+                      ورود
                     </NavLink>
                   </li>
                   <li className="text-xl">
                     <NavLink className="font-bold text-blue-600" to="/register">
-                      Register
+                      ثبت‌نام
                     </NavLink>
                   </li>
                 </>

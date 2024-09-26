@@ -73,11 +73,11 @@ const Register = () => {
         body: JSON.stringify(regObj),
       })
         .then((res) => {
-          toast.success("Registration Successful");
+          toast.success("ثبت‌نام با موفقیت انجام شد");
           navigate("/login");
         })
         .catch((err) => {
-          toast.error("Failed: " + err.message);
+          toast.error("خطا: " + err.message);
         });
     }
   };

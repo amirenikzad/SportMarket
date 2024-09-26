@@ -4,7 +4,7 @@ import React, { memo } from "react";
 const SelectSize = ({ sizeList, size, setSize }) => {
   return (
     <>
-      <select className="select select-info w-full max-w-xs select-md font-bold  text-white bg-red-500" value={size} onChange={(event) => {
+      <select className="select select-info  select-md font-bold  text-white bg-red-500" value={size} onChange={(event) => {
         const newSize = event.target.value;
         setSize(newSize);
       }}>

@@ -19,7 +19,7 @@ const wishlistSlice = createSlice({
     removeFromWishlist: (state, action) => {
       
       state.wishItems = action.payload.userObj.userWishlist;
-      toast.error("Product removed from the wishlist!");
+      toast.error("محصول از لیست علاقه‌مندی‌ها حذف شد");
     },
     updateWishlist: (state, action) => {
 
