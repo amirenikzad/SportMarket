@@ -157,7 +157,7 @@ const SingleProduct = () => {
           {/* </div> */}
           <div className="flex flex-row gap-x-2 max-sm:flex-col max-sm:gap-x"class="text-right !important">
             <button
-              className="btn bg-red-600 hover:bg-red-500 text-white"
+              className="btn bg-red-600 hover:bg-slate-2000 text-white"
               onClick={() => {
                 if (loginState) {
                   dispatch(addToCart(product));
@@ -174,7 +174,7 @@ const SingleProduct = () => {
 
             {product?.isInWishList ? (
               <button
-                className="btn bg-red-600 hover:bg-red-500 text-white"
+                className="btn bg-red-600 hover:bg-slate-2000 text-white"
                 onClick={() => {
                   if (loginState) {
                     removeFromWishlistHandler(product);
@@ -190,7 +190,7 @@ const SingleProduct = () => {
               </button>
             ) : (
               <button
-                className="btn bg-red-600 hover:bg-red-500 text-white"
+                className="btn bg-red-600 hover:bg-slate-2000 text-white"
                 onClick={() => {
                   if (loginState) {
                     addToWishlistHandler(product);

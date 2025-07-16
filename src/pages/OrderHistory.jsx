@@ -45,7 +45,7 @@ const OrderHistory = () => {
             </h1>
             <Link
               to="/shop"
-              className="btn bg-red-600 hover:bg-red-500 text-white mt-10"
+              className="btn bg-red-600 hover:bg-slate-2000 text-white mt-10"
             >
               اولین خرید خود را انجام دهید
             </Link>

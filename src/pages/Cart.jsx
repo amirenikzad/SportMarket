@@ -26,11 +26,11 @@ const Cart = () => {
         <div className='lg:col-span-4 lg:pl-4'>
           <CartTotals />
           {loginState ? (
-            <button onClick={isCartEmpty} className='btn bg-red-600 hover:bg-red-500 text-white btn-block mt-8'>
+            <button onClick={isCartEmpty} className='btn bg-red-600 hover:bg-slate-2000 text-white btn-block mt-8'>
               سفارش بدهید
             </button>
           ) : (
-            <Link to='/login' className='btn bg-red-600 hover:bg-red-500 btn-block text-white mt-8'>
+            <Link to='/login' className='btn bg-red-600 hover:bg-slate-2000 btn-block text-white mt-8'>
               به اکانت خود وارد شوید
             </Link>
           )}

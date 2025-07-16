@@ -64,7 +64,7 @@ const Login = () => {
       <div className="flex flex-col justify-center sm:py-12 ">
         <div className="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
           <div className="bg-dark border  shadow w-full rounded-lg   ">
-            <form className="px-5 py-7 bg-red-100" onSubmit={proceedLogin}>
+            <form className="px-5 py-7 bg-slate-200" onSubmit={proceedLogin}>
               <label className="font-semibold text-right text-sm pb-1 block text-stone-950">
                 ایمیل
               </label>

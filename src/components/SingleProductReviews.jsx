@@ -16,7 +16,7 @@ const SingleProductReviews = ({ rating, productData }) => {
           <SingleReview key={nanoid()} reviewObj={item} />
         ))}
         {productData?.totalReviewCount > 3 && (
-          <button className="btn bg-red-600 hover:bg-red-500 w-full text-white">
+          <button className="btn bg-red-600 hover:bg-slate-2000 w-full text-white">
             دیدن تمام دیدگاه‌ها
           </button>
         )}

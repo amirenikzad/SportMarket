@@ -86,7 +86,7 @@ const Register = () => {
       <SectionTitle title="ثبت‌نام" path="" />
       <div className="flex flex-col justify-center sm:py-12">
         <div className="p-10 xs:p-0 mx-auto md:w-full md:max-w-md">
-          <div className="bg-dark border border-gray-600 shadow w-full rounded-lg divide-y divide-gray-200 bg-red-100">
+          <div className="bg-dark border border-gray-600 shadow w-full rounded-lg divide-y divide-gray-200 bg-slate-200">
             <form className="px-5 py-7" onSubmit={handleSubmit}>
               <label className="font-semibold text-right text-sm pb-1 block text-stone-950 ">
                 نام
