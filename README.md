@@ -21,3 +21,34 @@ This project simulates product listings, user profiles, and interactions using a
 ```bash
 git clone https://github.com/amirenikzad/SportMarket.git
 cd SportMarket
+```
+Install dependencies
+
+Using Yarn:
+```bash
+yarn
+```
+
+ Start the development server
+```bash
+yarn start
+```
+This command will run both:
+
+The React frontend on: http://localhost:5173
+
+A fake API server (json-server) on: http://localhost:8080
+
+🔌 Mock API with json-server
+This project uses json-server to simulate a backend.
+
+The fake database is stored in:
+
+```bash
+src/data/db.json
+```
+The fake API server runs with:
+```bash
+ npx json-server --watch src/data/db.json --port 8080
+```
+
